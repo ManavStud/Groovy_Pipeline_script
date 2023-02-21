@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Stage !: Building the Pipeline') {
+            steps {
+                echo 'Sodtware is in the Building Stage'
+            }
+        }
+        stage('Stage 2: Testing the Pipeline') {
+            steps {
+                echo 'Software is in thr Testing Stage'
+            }
+        }
+        stage('Stage 3: Deploying the Pipeline') {
+            steps {
+                echo 'Software is in the Deployment Stage'
+            }
+        }
+    }
+}
